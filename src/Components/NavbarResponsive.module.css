@@ -1,0 +1,178 @@
+.back{
+    position: fixed;
+    top: 4rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.341);
+}
+.btnBack{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.4rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+}
+.burguerBtn{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnTop, .btnMiddle, .btnBottom{
+    height: 0.4rem;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    transition: all 0.2s linear;
+}
+.btnTop, .btnBottom{
+    width: 50%;
+}
+.btnMiddle{
+    width: 100%;
+}
+.btnTop{
+    align-self: start;
+}
+.btnBottom{
+    align-self: end;
+}
+
+
+/* al hacer click */
+
+.equis{
+    transform: rotate(45deg);
+    transition: transform 0.4s ease-in-out 0.8s;
+}
+.equis *{
+    background-color: var(--text-color);
+}
+.equis .btnTop{
+    width: 100%;
+    transform: translateY(300%);
+    transition: all 0.4s ease-in-out 0.4s;
+}
+.equis .btnBottom{
+    width: 100%;
+    transform-origin: center;
+    transform: rotate(90deg) translateX(-50%);
+    transition: all 0.4s ease-in-out 0.4s;
+}
+.equis .btnMiddle{
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+/* menu */
+
+.hide{
+    width: 18rem;
+    height: 30rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    opacity: 1;
+    visibility: hidden;
+    transition: visibility 0.1s linear 0.8s;
+}
+
+.menu{
+    width: 18rem;
+    height: 30rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.hiden li{
+    visibility: hidden;
+    opacity: 0;
+}
+.hiden li *{
+    display: none;
+}
+.transition{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fuerte);
+    clip-path: circle(10% at 97% 97%);
+    transition: clip-path 0.8s ease-in-out;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.items{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--fuerte);
+    clip-path: circle(75%);
+    opacity: 1;
+}
+.transition li{
+    width: 100%;
+    height: 2.4rem;
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+    transform: translateX(4rem);
+    transition: opacity 0.5s linear 0.8s, transform 0.4s ease-in-out 0.8s;
+}
+.transition li:nth-child(2){
+    transition-delay: 0.9s;
+}
+.transition li:nth-child(3){
+    transition-delay: 1s;
+}
+.transition li:nth-child(4){
+    transition-delay: 1.1s;
+}
+.title{
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+.appear{
+    opacity: 1!important;
+    transform: translateX(0%)!important;
+}
+.left{
+    width: 1rem;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(1.25rem);
+    border-radius: 0.2rem;
+    background-color: brown;
+    transition: all 0.2s ease-in-out;
+}
+.leftLine{
+    height: 100%;
+    transform: translateY(0);
+}
+.active{
+    color: brown;
+}

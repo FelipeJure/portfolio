@@ -1,0 +1,75 @@
+.containerIcons{
+    width: 30rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.containerIcons{
+    bottom: 1rem;
+}
+
+.button{
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.bg{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: -1;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 6px black;
+}
+
+.containerIcons .button:first-child div{
+    background-color: #0e76a8;
+}
+.containerIcons .button:first-child:hover div{
+    box-shadow: 0px 0px 12px 2px #0a4561;
+}
+.containerIcons .button:nth-child(2) div{
+    background-color: #24292f;
+}
+.containerIcons .button:nth-child(2):hover div{
+    box-shadow: 0px 0px 12px 2px #171a1e;
+}
+.containerIcons .button:last-child div{
+    background-color: #963403;
+}
+.containerIcons .button:last-child:hover div{
+    box-shadow: 0px 0px 12px 2px #5a1f02;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.emailIcon{
+    width: 2rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+
+@media (max-width:1030px) {
+    .containerIcons{
+        width: 15rem;
+        left: 8rem;
+        flex-direction: column;
+    }
+}
