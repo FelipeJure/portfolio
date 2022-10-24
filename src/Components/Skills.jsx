@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import s from './Skills.module.css';
 
 const html = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449844/Portfolio/html_uijzer.png';
@@ -13,10 +14,12 @@ const node = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Port
 const postgreSQL = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Portfolio/postgreSQL_glqsja.png';
 
 export default function Skills () {
+    const language = useSelector(state => state.language)
+
     return (
         <div className={s.container}>
                 <div className={s.text}>
-                    <h1>Skills</h1>
+                    <h1>{language === "english" ? "Skills" : "Habilidades"}</h1>
                 </div>
                 <div className={s.content}>
                     <div className={s.area} data-aos="fade-right">
