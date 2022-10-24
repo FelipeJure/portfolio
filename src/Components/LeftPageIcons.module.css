@@ -68,8 +68,9 @@
 
 @media (max-width:1030px) {
     .containerIcons{
-        width: 15rem;
-        left: 8rem;
+        width: 5rem;
+        left: 1rem;
         flex-direction: column;
+        transform: translateX(0);
     }
 }
