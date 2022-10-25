@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import {
   FormControl,
@@ -13,6 +13,8 @@ import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material/styles";
 import emailjs from "@emailjs/browser";
 import s from "./Contact.module.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE;
 const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -86,6 +88,11 @@ export default function Contact() {
   const language = useSelector((state) => state.language);
   const avatar = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449461/Portfolio/avatarOK_wlxgjc.webp';
 
+  useEffect(()=>{
+    Aos.init()
+  },[])
+
+
   const handleChange = (e) => {
     setInput({
       ...input,
@@ -130,7 +137,7 @@ export default function Contact() {
 
   return (
     <div className={s.container}>
-      <div className={s.text}>
+      <div className={s.text} data-aos-duration="2500" data-aos="fade-up">
         <h1>{language === "english" ? "Contact" : "Contacto"}</h1>
         <ThemeProvider theme={theme}>
           <div className={s.containerForm}>

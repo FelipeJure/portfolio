@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import s from "./Projects.module.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 export default function Projects() {
@@ -9,6 +11,10 @@ export default function Projects() {
   const videoLet = "https://res.cloudinary.com/pflet/video/upload/v1663803785/Let/Others/lets_GO_bzvzfp.mp4";
   const videoWeather = 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450471/Portfolio/weatherAppVideo_px3oha.mp4'
   const videoDogs = 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666449774/Portfolio/DogsApp_ocavt9.mp4';
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
 
   return (
     <div className={s.container}>
@@ -19,7 +25,7 @@ export default function Projects() {
         <div className={s.area}>
           <h3 className={s.nothing}>Front-End</h3>
           <div className={s.show}>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               <span>Weather App</span>
               {language === "english" ? (
                 <p>
@@ -49,7 +55,7 @@ export default function Projects() {
                 </div>
               </a>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               <span>Movies App</span>
               {language === "english" ? (
                 <p>
@@ -88,7 +94,7 @@ export default function Projects() {
               : "Front-End y Back-End con base de datos"}
           </h3>
           <section className={s.show}>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               <span>Dogs App</span>
               {language === "english" ? (
                 <p>
@@ -137,9 +143,8 @@ export default function Projects() {
           <h3 className={s.nothing}>
             {language === "english" ? "Team Work" : "En equipo"}
           </h3>
-
           <div className={s.show}>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               <span>let's GO</span>
               {language === "english" ? (
                 <p>
