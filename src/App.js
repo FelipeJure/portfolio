@@ -1,16 +1,15 @@
-import s from './App.module.css';
-import About from './Components/About';
-import LeftPage from './Components/LeftPage';
-import Navbar from './Components/Navbar';
-import Skills from './Components/Skills';
-import Proyects from './Components/Proyects';
-import Contact from './Components/Contact';
 import { useSelector } from 'react-redux';
+import s from './App.module.css';
+import About from './Components/About/About';
+import LeftPage from './Components/LeftPage/LeftPage';
+import Navbar from './Components/Navbar/Navbar';
+import Skills from './Components/Skills/Skills';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
   const color = useSelector(state => state.color)
-
   
   return (
     <div className={color === 'light'? s.light : s.dark}>
@@ -26,7 +25,7 @@ function App() {
         <div className={s.ball} id='proyects'></div>
         <div className={s.line}></div>
       </div>
-      <Proyects/>
+      <Projects/>
       <div className={s.container}>
         <div className={s.ball} id='contact'></div>
         <div className={s.line}></div>

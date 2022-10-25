@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { changeLanguage, changeColor } from '../Redux/actions';
+import { changeLanguage, changeColor } from '../../Redux/actions';
 import NavbarResponsive from './NavbarResponsive';
 import s from './Navbar.module.css';
 

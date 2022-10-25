@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import s from "./Proyects.module.css";
+import s from "./Projects.module.css";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
-export default function Proyects() {
+export default function Projects() {
   const language = useSelector((state) => state.language);
   const videoMovies = 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450661/Portfolio/moviesAppVideoCorto_syzfsr.mp4'
   const videoLet = "https://res.cloudinary.com/pflet/video/upload/v1663803785/Let/Others/lets_GO_bzvzfp.mp4";
