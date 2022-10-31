@@ -1,10 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import s from './LeftPage.module.css';
 import style from './LeftPageIcons.module.css';
 
 
 export default function LeftPage () {
-
+    const language = useSelector(state => state.language)
     const profilePic = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Portfolio/picProfile_animated_cmlbdw.webp';
     const linkedin = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Portfolio/linkedin_iufuag.png';
     const github = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449510/Portfolio/github_z8me7k.png'
@@ -67,7 +68,7 @@ export default function LeftPage () {
                     <img src={github} alt="github" className={style.icon}/>
                     <div className={style.bg}></div>
                 </a>
-                <a href="https://drive.google.com/file/d/1Z8UsZT_MbwPqRCrF4pIRmFRoPy3cHJNu/view?usp=sharing" target='_blank' rel='noreferrer' className={style.button} onMouseMove={onMove} onMouseEnter={onEnter} onMouseLeave={onLeave}>
+                <a href={language === 'spanish'? "https://drive.google.com/file/d/1N0tUsKD5FbuEPRYeVMHf6torA6EPmZo8/view?usp=sharing": 'https://drive.google.com/file/d/1Mbfhwg3SJyP7472ZUB4qievejQJC7E0k/view?usp=sharing'} target='_blank' rel='noreferrer' className={style.button} onMouseMove={onMove} onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={cv} alt="cv" className={style.icon}/>
                     <div className={style.bg}></div>
                 </a>
