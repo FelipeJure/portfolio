@@ -68,7 +68,7 @@ export default function LeftPage () {
                     <img src={github} alt="github" className={style.icon}/>
                     <div className={style.bg}></div>
                 </a>
-                <a href={language === 'spanish'? "https://drive.google.com/file/d/1GhKrAuQvuJnVBvNX89vxpva2m4luLdhp/view?usp=sharing": 'https://drive.google.com/file/d/1a85wxbl1ouYV_2I1Dfoi2aD74cjLdccj/view?usp=sharing'} target='_blank' rel='noreferrer' className={style.button} onMouseMove={onMove} onMouseEnter={onEnter} onMouseLeave={onLeave}>
+                <a href={language === 'spanish'? "https://www.canva.com/design/DAFAxPZH_Us/pVyKfVR3b8zdmdJxCI4EoA/view?utm_content=DAFAxPZH_Us&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink": 'https://www.canva.com/design/DAFQJbTr330/WFe1ePnua4JRV2NOaGjaOw/view?utm_content=DAFQJbTr330&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'} target='_blank' rel='noreferrer' className={style.button} onMouseMove={onMove} onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={cv} alt="cv" className={style.icon}/>
                     <div className={style.bg}></div>
                 </a>
