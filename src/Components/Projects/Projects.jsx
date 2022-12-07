@@ -23,60 +23,48 @@ export default function Projects() {
         <h1>{language === "english" ? "Projects" : "Proyectos"}</h1>
       </div>
       <div className={s.content}>
-        <div className={s.area}>
-          <h3 className={s.nothing}>Front-End</h3>
+      <div className={s.area}>
+          <h3 className={s.nothing}>
+            {language === "english" ? "Team Work" : "En equipo"}
+          </h3>
           <div className={s.show}>
             <div data-aos="zoom-in" data-aos-duration="2000">
-              <span>Weather App</span>
+              <span>let's GO</span>
               {language === "english" ? (
                 <p>
-                  It's my first application and I made it with Javascript, React
-                  and Redux with pure CSS.
+                  It's an e-commerce of bike and adventures rental with a forum
+                  to share your experience and rate your bike. It was made in
+                  team with other 7 persons using SCRUM and Trello to
+                  organizate. It use Javascript, React, Redux, CSS, NodeJs,
+                  Sequelize, Express and PostgreSQL.
+                  <br />
+                  <strong>Libraries</strong>
+                  <br />
+                  Socket.IO | Cloudinary | Autoh0 | Sweet Alert | CoreUI |
+                  EmailJS | MaterialUI
                 </p>
               ) : (
                 <p>
-                  Es mi primer aplicación y la realizé con Javascript, React y
-                  Redux con CSS puro
+                  Es un e-commerce de alquiler de bicicletas y aventuras con un
+                  foro para compartir experiencias y puntuar tu bici. Hecha por
+                  un grupo con otras 7 personas, usando metodología SCRUM y
+                  Trello para su organización. Se utilizó Javascript, React,
+                  Redux, CSS, NodeJs, Sequelize, Express y PostgreSQL.
+                  <br />
+                  <strong>Librerías</strong>
+                  <br />
+                  Socket.IO | Cloudinary | Autoh0 | Sweet Alert | CoreUI |
+                  EmailJS | MaterialUI
                 </p>
               )}
               <a
-                href="https://weatherapp-jet-eight.vercel.app/"
+                href="https://pf-let.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <video
                   className={s.video}
-                  src={videoWeather}
-                  autoPlay
-                  muted
-                  loop
-                ></video>
-                <div className={s.iconBack}>
-                  <RocketLaunchIcon fontSize="large" />
-                </div>
-              </a>
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="2000">
-              <span>Movies App</span>
-              {language === "english" ? (
-                <p>
-                  It's an application made with Javascript, React and Redux with
-                  the helpfull of libraries just like Bootstrap and Swiper.
-                </p>
-              ) : (
-                <p>
-                  Es una aplicación hecha con Javascript, React, Redux y la
-                  ayuda de librerías como Bootstrap y Swiper.
-                </p>
-              )}
-              <a
-                href="https://moviesapp-dusky.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <video
-                  className={s.video}
-                  src={videoMovies}
+                  src={videoLet}
                   autoPlay
                   muted
                   loop
@@ -180,47 +168,59 @@ export default function Projects() {
           </section>
         </div>
         <div className={s.area}>
-          <h3 className={s.nothing}>
-            {language === "english" ? "Team Work" : "En equipo"}
-          </h3>
+          <h3 className={s.nothing}>Front-End</h3>
           <div className={s.show}>
             <div data-aos="zoom-in" data-aos-duration="2000">
-              <span>let's GO</span>
+              <span>Weather App</span>
               {language === "english" ? (
                 <p>
-                  It's an e-commerce of bike and adventures rental with a forum
-                  to share your experience and rate your bike. It was made in
-                  team with other 7 persons using SCRUM and Trello to
-                  organizate. It use Javascript, React, Redux, CSS, NodeJs,
-                  Sequelize, Express and PostgreSQL.
-                  <br />
-                  <strong>Libraries</strong>
-                  <br />
-                  Socket.IO | Cloudinary | Autoh0 | Sweet Alert | CoreUI |
-                  EmailJS | MaterialUI
+                  It's my first application and I made it with Javascript, React
+                  and Redux with pure CSS.
                 </p>
               ) : (
                 <p>
-                  Es un e-commerce de alquiler de bicicletas y aventuras con un
-                  foro para compartir experiencias y puntuar tu bici. Hecha por
-                  un grupo con otras 7 personas, usando metodología SCRUM y
-                  Trello para su organización. Se utilizó Javascript, React,
-                  Redux, CSS, NodeJs, Sequelize, Express y PostgreSQL.
-                  <br />
-                  <strong>Librerías</strong>
-                  <br />
-                  Socket.IO | Cloudinary | Autoh0 | Sweet Alert | CoreUI |
-                  EmailJS | MaterialUI
+                  Es mi primer aplicación y la realizé con Javascript, React y
+                  Redux con CSS puro
                 </p>
               )}
               <a
-                href="https://pf-let.vercel.app/"
+                href="https://weatherapp-jet-eight.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <video
                   className={s.video}
-                  src={videoLet}
+                  src={videoWeather}
+                  autoPlay
+                  muted
+                  loop
+                ></video>
+                <div className={s.iconBack}>
+                  <RocketLaunchIcon fontSize="large" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+              <span>Movies App</span>
+              {language === "english" ? (
+                <p>
+                  It's an application made with Javascript, React and Redux with
+                  the helpfull of libraries just like Bootstrap and Swiper.
+                </p>
+              ) : (
+                <p>
+                  Es una aplicación hecha con Javascript, React, Redux y la
+                  ayuda de librerías como Bootstrap y Swiper.
+                </p>
+              )}
+              <a
+                href="https://moviesapp-dusky.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <video
+                  className={s.video}
+                  src={videoMovies}
                   autoPlay
                   muted
                   loop
@@ -232,6 +232,8 @@ export default function Projects() {
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   );
