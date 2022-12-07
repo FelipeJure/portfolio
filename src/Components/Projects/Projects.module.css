@@ -123,3 +123,25 @@
         margin-left: 0%;
     }
 }
+
+.dolarDiv{
+    position: relative;
+    flex-direction: row!important;
+    height: 20rem;
+}
+
+.spanDolar{
+    position: absolute;
+    top: 1rem;
+}
+
+.pDolar{
+    width: 70%;
+    height: 15rem;
+    padding-top: 1rem;
+    overflow-x: scroll;
+}
+
+.videoDolar{
+    height: 15rem;
+}

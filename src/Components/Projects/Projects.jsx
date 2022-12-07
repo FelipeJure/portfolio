@@ -11,6 +11,7 @@ export default function Projects() {
   const videoLet = "https://res.cloudinary.com/pflet/video/upload/v1663803785/Let/Others/lets_GO_bzvzfp.mp4";
   const videoWeather = 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450471/Portfolio/weatherAppVideo_px3oha.mp4'
   const videoDogs = 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666449774/Portfolio/DogsApp_ocavt9.mp4';
+  const videoDolar = 'https://res.cloudinary.com/dholyxgxe/video/upload/v1670430451/Portfolio/d%C3%B3lar_App_reducido_kuiudu.mp4'
 
   useEffect(() => {
     Aos.init()
@@ -128,6 +129,45 @@ export default function Projects() {
                 <video
                   className={s.video}
                   src={videoDogs}
+                  autoPlay
+                  muted
+                  loop
+                ></video>
+                <div className={s.iconBack}>
+                  <RocketLaunchIcon fontSize="large" />
+                </div>
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2000" className={s.dolarDiv}>
+              <span className={s.spanDolar}>Dolar App</span>
+              {language === "english" ? (
+                <p className={s.pDolar}>
+                  It's a Single Page Application, made mainly with Typescript,
+                  React Native, Redux, NodeJs, Express and PostgreSQL as database. It
+                  consumes data from an external API and has a database where
+                  the information is reorganized and stored. The App displays
+                  the exchange of the types of dollar and other money. Also show the 
+                  difference between options of investment and the evolution of two types of dollars.
+                </p>
+              ) : (
+                <p className={s.pDolar}>
+                  Es una Single Page Application, hecha con Typescript, React Native,
+                  Redux, NodeJS, Express y PostgreSQL como base de datos.
+                  Consume información de una API externa y cuenta con una base
+                  de datos donde se reorganiza y almacena la información. 
+                  La App muestra el cambio de los tipos de dólar y otro dinero. 
+                  También muestra la diferencia entre opciones de inversión y 
+                  la evolución de dos tipos de dólares.
+                </p>
+              )}
+              <a
+                href="https://youtube.com/shorts/wKdujBNPCyI"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <video
+                  className={`${s.video} ${s.videoDolar}`}
+                  src={videoDolar}
                   autoPlay
                   muted
                   loop
