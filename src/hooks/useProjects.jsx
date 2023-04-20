@@ -43,18 +43,78 @@ export const useProjects = () => {
             : "Front-End y Back-End con base de datos",
             info: [
                 {
-                    name: '',
-                    description: 'd',
-                    video: 'd'
+                    name: 'Dogs App',
+                    description: language === "english" ? 
+                    `It's a Single Page Application, made mainly with Javascript,
+                    React, Redux, NodeJs, Express and PostgreSQL as database. It
+                    consumes data from an external API and has a database where
+                    new dogs can be created, modified or deleted. The App displays
+                    the characteristics of the dogs and can be sorted (by name,
+                    weight and height) and filtered (by temperament, breed or
+                    origin). It also has a search bar by name. The backend was
+                    deployed in Railway. The frontend was deployed in Vercel`
+                    :
+                    `Es una Single Page Application, hecha con Javascript, React,
+                    Redux, NodeJS, Express y PostgreSQL como base de datos.
+                    Consume información de una API externa y cuenta con una base
+                    de datos donde se pueden crear nuevos perros, modificarlos o
+                    eliminarlos. La App muestra las características de los perros,
+                    pudiendo ordenarlos (por nombre, peso y altura) y filtrarlos
+                    (por temperamento, raza y origen). Tambien tiene una barra de
+                    búsqueda por nombre. El backend fue deployado en Railway. El
+                    frontend fue deployado en Vercel`,
+                    link: 'https://pi-dogs-previus.vercel.app',
+                    video: videoDogs,
+                    orientation: 'horizontal'
+                },
+                {
+                    name: 'Dolar App',
+                    description: language === "english" ? 
+                    `It's a Single Page Application, made mainly with Typescript,
+                    React Native, Redux, NodeJs, Express and PostgreSQL as
+                    database. It consumes data from an external API and has a
+                    database where the information is reorganized and stored. The
+                    App displays the exchange of the types of dollar and other
+                    money. Also show the difference between options of investment
+                    and the evolution of two types of dollars.`
+                    :
+                    `Es una Single Page Application, hecha con Typescript, React
+                    Native, Redux, NodeJS, Express y PostgreSQL como base de
+                    datos. Consume información de una API externa y cuenta con una
+                    base de datos donde se reorganiza y almacena la información.
+                    La App muestra el cambio de los tipos de dólar y otro dinero.
+                    También muestra la diferencia entre opciones de inversión y la
+                    evolución de dos tipos de dólares.`,
+                    link: 'https://youtube.com/shorts/wKdujBNPCyI',
+                    video: videoDolar,
+                    orientation: 'vertical'
                 }
             ]
         },
         front: {
-            title: language === "english" ? "Team Work" : "En equipo",
+            title: "Front-End",
             info: [
                 {
-                    description: 'd',
-                    video: 'd'
+                    name: 'Movies App',
+                    description: language === "english" ?
+                    `It's an application made with Javascript, React and Redux with
+                    the helpfull of libraries just like Bootstrap and Swiper.`
+                    :
+                    `Es una aplicación hecha con Javascript, React, Redux y la
+                    ayuda de librerías como Bootstrap y Swiper.`,
+                    link: 'https://moviesapp-dusky.vercel.app',
+                    video: videoMovies
+                },
+                {
+                    name: 'Weather App',
+                    description: language === "english" ?
+                    `It's my first application and I made it with Javascript, React
+                    and Redux with pure CSS.`
+                    :
+                    `Es mi primer aplicación y la realizé con Javascript, React y
+                    Redux con CSS puro`,
+                    link: 'https://weatherapp-jet-eight.vercel.app',
+                    video: videoWeather
                 }
             ]
         }
