@@ -3,17 +3,6 @@ import { useSelector } from "react-redux";
 export const useProjects = () => {
     const language = useSelector((state) => state.language);
 
-    const videoMovies =
-        "https://res.cloudinary.com/dholyxgxe/video/upload/v1666450661/Portfolio/moviesAppVideoCorto_syzfsr.mp4";
-    const videoLet =
-        "https://res.cloudinary.com/pflet/video/upload/v1663803785/Let/Others/lets_GO_bzvzfp.mp4";
-    const videoWeather =
-        "https://res.cloudinary.com/dholyxgxe/video/upload/v1666450471/Portfolio/weatherAppVideo_px3oha.mp4";
-    const videoDogs =
-        "https://res.cloudinary.com/dholyxgxe/video/upload/v1666449774/Portfolio/DogsApp_ocavt9.mp4";
-    const videoDolar =
-        "https://res.cloudinary.com/dholyxgxe/video/upload/v1670430451/Portfolio/d%C3%B3lar_App_reducido_kuiudu.mp4";
-
     return {
         teamWork: {
             title: language === "english" ? "Team Work" : "En equipo",
@@ -32,7 +21,7 @@ export const useProjects = () => {
                     Trello para su organización. Se utilizó Javascript, React,
                     Redux, CSS, NodeJs, Sequelize, Express y PostgreSQL.`,
                     libraries: 'Socket.IO | Cloudinary | Autoh0 | Sweet Alert | CoreUI | EmailJS | MaterialUI',
-                    video: videoLet,
+                    video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450661/Portfolio/moviesAppVideoCorto_syzfsr.mp4',
                     link: 'https://pf-let.vercel.app'
                 }
             ]
@@ -64,7 +53,7 @@ export const useProjects = () => {
                     búsqueda por nombre. El backend fue deployado en Railway. El
                     frontend fue deployado en Vercel`,
                     link: 'https://pi-dogs-previus.vercel.app',
-                    video: videoDogs,
+                    video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666449774/Portfolio/DogsApp_ocavt9.mp4',
                     orientation: 'horizontal'
                 },
                 {
@@ -86,7 +75,7 @@ export const useProjects = () => {
                     También muestra la diferencia entre opciones de inversión y la
                     evolución de dos tipos de dólares.`,
                     link: 'https://youtube.com/shorts/wKdujBNPCyI',
-                    video: videoDolar,
+                    video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1670430451/Portfolio/d%C3%B3lar_App_reducido_kuiudu.mp4',
                     orientation: 'vertical'
                 }
             ]
@@ -103,7 +92,7 @@ export const useProjects = () => {
                     `Es una aplicación hecha con Javascript, React, Redux y la
                     ayuda de librerías como Bootstrap y Swiper.`,
                     link: 'https://moviesapp-dusky.vercel.app',
-                    video: videoMovies
+                    video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450661/Portfolio/moviesAppVideoCorto_syzfsr.mp4'
                 },
                 {
                     name: 'Weather App',
@@ -114,7 +103,7 @@ export const useProjects = () => {
                     `Es mi primer aplicación y la realizé con Javascript, React y
                     Redux con CSS puro`,
                     link: 'https://weatherapp-jet-eight.vercel.app',
-                    video: videoWeather
+                    video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450471/Portfolio/weatherAppVideo_px3oha.mp4'
                 }
             ]
         }

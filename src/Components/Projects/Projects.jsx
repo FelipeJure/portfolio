@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import s from "./Projects.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import { useProjects } from "../../hooks/useProjects";
 import { Project } from "../Project/Project";
 
