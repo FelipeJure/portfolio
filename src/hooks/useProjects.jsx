@@ -38,7 +38,9 @@ export const useProjects = () => {
             ]
         },
         both: {
-            title: language === "english" ? "Team Work" : "En equipo",
+            title: language === "english"
+            ? "Front-End & Back-End with DB"
+            : "Front-End y Back-End con base de datos",
             info: [
                 {
                     name: '',

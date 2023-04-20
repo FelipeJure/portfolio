@@ -63,7 +63,7 @@
     gap: 1.5rem;
 }
 
-.show > div{
+.description{
     height: 100%;
     width: 100%;
     display: flex;
@@ -76,16 +76,16 @@
     padding: 1rem;
 }
 
-.show > div > span{
+.description > span{
     font-weight: 700;
 }
 
-.show > div > p{
+.description > p{
     text-align: justify;
     padding: 0 1rem;
 }
 
-.show > div > a{
+.description > a{
     position: relative;
 }
 .iconBack{
