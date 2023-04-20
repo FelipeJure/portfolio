@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 export const useProjects = () => {
     const language = useSelector((state) => state.language);
-
+    
     return {
         teamWork: {
             title: language === "english" ? "Team Work" : "En equipo",
@@ -21,7 +21,7 @@ export const useProjects = () => {
                     Trello para su organización. Se utilizó Javascript, React,
                     Redux, CSS, NodeJs, Sequelize, Express y PostgreSQL.`,
                     libraries: 'Socket.IO | Cloudinary | Autoh0 | Sweet Alert | CoreUI | EmailJS | MaterialUI',
-                    video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666450661/Portfolio/moviesAppVideoCorto_syzfsr.mp4',
+                    video: 'https://res.cloudinary.com/pflet/video/upload/v1663803785/Let/Others/lets_GO_bzvzfp.mp4',
                     link: 'https://pf-let.vercel.app'
                 }
             ]
