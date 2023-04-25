@@ -52,24 +52,24 @@
     box-shadow: 0px 0px 8px 1px var(--text-color);
 }
 
-.verticalDiv{
+.mobileDiv{
     position: relative;
     flex-direction: row!important;
     height: 20rem;
 }
 
-.spanVertical{
+.spanMobile{
     position: absolute;
     top: 1rem;
 }
 
-.pVertical{
+.pMobile{
     width: 70%;
     height: 15rem;
     padding-top: 1rem;
-    overflow-x: scroll;
+    overflow-y: auto;
 }
 
-.videoVertical{
+.videoMobile{
     height: 15rem;
 }

@@ -47,7 +47,7 @@ export default function Projects() {
                   name={project.name}
                   description={project.description}
                   link={project.link}
-                  orientation={project.orientation}
+                  type={project.type}
                   video={project.video}
                 />
               );

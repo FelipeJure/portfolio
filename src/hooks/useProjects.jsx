@@ -54,7 +54,7 @@ export const useProjects = () => {
                     frontend fue deployado en Vercel`,
                     link: 'https://pi-dogs-previus.vercel.app',
                     video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1666449774/Portfolio/DogsApp_ocavt9.mp4',
-                    orientation: 'horizontal'
+                    type: 'web'
                 },
                 {
                     name: 'Dolar App',
@@ -76,7 +76,7 @@ export const useProjects = () => {
                     evolución de dos tipos de dólares.`,
                     link: 'https://youtube.com/shorts/wKdujBNPCyI',
                     video: 'https://res.cloudinary.com/dholyxgxe/video/upload/v1670430451/Portfolio/d%C3%B3lar_App_reducido_kuiudu.mp4',
-                    orientation: 'vertical'
+                    type: 'mobile'
                 }
             ]
         },
