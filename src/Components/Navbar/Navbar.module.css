@@ -7,10 +7,10 @@
     z-index: 10;
     display: flex;
     align-items: center;
-    background-color: #2b4f71;
+    background-color: var(--strong-blue-color);
     justify-content: space-between;
     padding: 0 2rem;
-    box-shadow: 0px 2px 2px #2b4f71;
+    box-shadow: 0px 2px 2px var(--strong-blue-color);
 }
 
 .items{

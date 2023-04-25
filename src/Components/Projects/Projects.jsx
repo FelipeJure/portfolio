@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import s from "./Projects.module.css";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import { useProjects } from "../../hooks/useProjects";
 import { Project } from "../Project/Project";

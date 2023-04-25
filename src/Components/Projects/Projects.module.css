@@ -53,15 +53,6 @@
     }
 }
 
-/* .show{
-    width: 85%;
-    max-width: 40rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 1.5rem;
-} */
 .coverSwiper{
     width: 95%;
     max-width: 40rem;
@@ -71,9 +62,7 @@
 .coverSwiper > div > :nth-child(2) {
     bottom: -2.8rem!important;
 }
-.coverSwiper {
-    --swiper-theme-color: #2b4f71
-}
+
 
 @media (max-width:800px) {
     .container{

@@ -6,8 +6,8 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    background-color: #657a97;
-    box-shadow: 5px 6px 13px 14px #657a97;
+    background-color: var(--light-blue-color);
+    box-shadow: 5px 6px 13px 14px var(--light-blue-color);
 }
 
 .information{

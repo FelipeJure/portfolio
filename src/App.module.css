@@ -7,6 +7,9 @@
     --bgnot1-color: #212121;
     --bgnot2-color: #424242;
     --textnot-color: aliceblue;
+    --light-blue-color: #657a97;
+    --strong-blue-color: #2b4f71;
+    --swiper-theme-color: var(--strong-blue-color);
 }
 
 .dark{
@@ -18,8 +21,10 @@
     --bgnot1-color: #c9cfdf;
     --bgnot2-color: #e9edf8;
     --textnot-color: #121212;
+    --light-blue-color: #657a97;
+    --strong-blue-color: #2b4f71;
+    --swiper-theme-color: var(--light-blue-color);
 }
-
 
 .container, .containertwo{
     height: 4rem;
