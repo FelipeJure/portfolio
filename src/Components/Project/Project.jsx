@@ -4,9 +4,9 @@ import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 export const Project = ({ name, description, link, libraries, video, type }) => {
   return (
-    <div data-aos="zoom-in" data-aos-duration="2000" className={type === 'mobile'? `${s.mobileDiv} ${s.description}` : s.description}>
-      <span className={type === 'mobile' && s.spanMobile}>{name}</span>
-      <p className={type === 'mobile' && s.pMobile}>
+    <div className={type === 'mobile'? `${s.mobileDiv} ${s.description}` : s.description}>
+      <span className={type === 'mobile'? s.spanMobile : undefined}>{name}</span>
+      <p className={type === 'mobile'? s.pMobile : undefined}>
         {description}
         {libraries && (
           <>

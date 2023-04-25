@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 export const useProjects = () => {
     const language = useSelector((state) => state.language);
     
-    return {
-        teamWork: {
+    return [
+        {
             title: language === "english" ? "Team Work" : "En equipo",
             info:[
                 {
@@ -26,7 +26,7 @@ export const useProjects = () => {
                 }
             ]
         },
-        both: {
+        {
             title: language === "english"
             ? "Front-End & Back-End with DB"
             : "Front-End y Back-End con base de datos",
@@ -80,7 +80,7 @@ export const useProjects = () => {
                 }
             ]
         },
-        front: {
+        {
             title: "Front-End",
             info: [
                 {
@@ -107,5 +107,5 @@ export const useProjects = () => {
                 }
             ]
         }
-    }
+    ]
 }
