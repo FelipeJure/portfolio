@@ -28,7 +28,7 @@ export default function Skills () {
                     <h1>{language === "english" ? "Skills" : "Habilidades"}</h1>
                 </div>
                 <div className={s.content}>
-                    <div className={s.area} data-aos="fade-right" data-aos-duration="2500">
+                    <div className={s.area} data-aos="fade-up" data-aos-duration="2500">
                         <h3>Front-End</h3>
                         <section>
                             <div>
@@ -49,7 +49,7 @@ export default function Skills () {
                             </div>
                         </section>
                     </div>
-                    <div className={s.area} data-aos="fade-left" data-aos-duration="2500">
+                    <div className={s.area} data-aos="fade-up" data-aos-duration="2500">
                         <h3>Back-End</h3>
                         <section>
                             <div>
