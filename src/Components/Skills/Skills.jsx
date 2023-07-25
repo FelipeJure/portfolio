@@ -11,9 +11,11 @@ const redux = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666450392/Por
 const javascript = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Portfolio/javascript_ohz2xw.png';
 const github = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449510/Portfolio/github_z8me7k.png';
 const git = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449510/Portfolio/git_kt6gso.png';
-const sequelize = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666450392/Portfolio/sequelize_v04prd.png';
+const chatGPT = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1690304042/Portfolio/cdnlogo.com_ChatGPT_n2zms9.png';
 const node = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Portfolio/node_uwcswm.png';
 const postgreSQL = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1666449845/Portfolio/postgreSQL_glqsja.png';
+const Docker = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1690302995/Portfolio/pngwing.com_1_ns85vj.png';
+const MongoDB = 'https://res.cloudinary.com/dholyxgxe/image/upload/v1690303700/Portfolio/f2n6grl8e83iv7b9i74hd0d0g0_khbgcw.png';
 
 export default function Skills () {
     const language = useSelector(state => state.language)
@@ -53,20 +55,25 @@ export default function Skills () {
                         <h3>Back-End</h3>
                         <section>
                             <div>
+                                <span>NodeJS</span>
+                                <img src={node} alt="node" className={s.icon}/>
+                            </div>
+                            <div>
                                 <span>Express</span>
                             </div>
                             <div>
-                                <span>Sequelize</span>
-                                <img src={sequelize} alt="sequelize" className={s.icon}/>
-                            </div>
-                            <div>
-                                <span>NodeJS</span>
-                                <img src={node} alt="node" className={s.icon}/>
+                                <span>Docker</span>
+                                <img src={Docker} alt="Docker" className={s.icon}/>
                             </div>
                             <div>
                                 <span>PostgreSQL</span>
                                 <img src={postgreSQL} alt="postgreSQL" className={s.icon}/>
                             </div>
+                            <div>
+                                <span>MongoDB</span>
+                                <img src={MongoDB} alt="MongoDB" className={s.icon}/>
+                            </div>
+                            
                         </section>
                     </div>
                     <div className={s.area}  data-aos="fade-up" data-aos-duration="2500">
@@ -83,6 +90,10 @@ export default function Skills () {
                             <div>
                                 <span>Javascript</span>
                                 <img src={javascript} alt="javascript" className={s.icon}/>
+                            </div>
+                            <div>
+                                <span>Integración con API chatGPT</span>
+                                <img src={chatGPT} alt="chatGPT" className={s.icon}/>
                             </div>
                         </section>
                     </div>                    
